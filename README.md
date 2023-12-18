@@ -1,6 +1,19 @@
-# Create T3 App
+# 🎈 Mantine + T3 Stack (App Directory) Starter Kit
+## Get Started in 3 Steps
+1. Clone the Repository
+```bash
+$ git clone https://github.com/WillKirkmanM/mantine-t3-template
+```
+2. Install Dependencies
+```bash
+$ npm install
+```
+3. Start the App!
+```bash
+$ npm run dev
+```
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app` alone with [Mantine](https://mantine.dev)
 
 ## What's next? How do I make an app with this?
 
