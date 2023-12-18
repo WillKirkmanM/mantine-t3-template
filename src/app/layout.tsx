@@ -1,4 +1,9 @@
-import "~/styles/globals.css";
+// Import styles of packages that you've installed.
+// All packages except `@mantine/hooks` require styles imports
+import '@mantine/core/styles.css';
+
+import type { AppProps } from 'next/app';
+import { createTheme, MantineProvider, ColorSchemeScript } from '@mantine/core';
 
 import { Inter } from "next/font/google";
 import { cookies } from "next/headers";
@@ -25,7 +30,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
         <TRPCReactProvider cookies={cookies().toString()}>
-          {children}
+          <MantineProvider>
+            <ColorSchemeScript />
+            {children}
+          </MantineProvider>
         </TRPCReactProvider>
       </body>
     </html>
